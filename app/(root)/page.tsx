@@ -1,28 +1,17 @@
-import { title } from "process";
+// import { title } from "process";
 import SearchForm from "../../components/SearchForm";
 import StartupCard, { StartupCardType } from "@/components/StartupCard";
-import { client } from "@/sanity/lib/client";
+// import { client } from "@/sanity/lib/client";
 import { STARTUP_QUERY } from "@/sanity/lib/queries";
+import { sanityFetch, SanityLive } from "@/sanity/lib/live";
 
 export default async function Home({searchParams}: {searchParams: Promise<{query?: string}>}) {
 
   const query = (await searchParams).query
+  const params = {search: query || null}
 
-  const posts = await client.fetch(STARTUP_QUERY)
-  // console.log(JSON.stringify(posts, null, 2))
-
-  // const posts = [
-  //   {
-  //     _createdAt: new Date(),
-  //     views: 75,
-  //     author: {_id:1, name: 'Roland Stedy'},
-  //     _id: 1,
-  //     description: 'this is a post',
-  //     image: '/pic.jpg',
-  //     category: 'Magical',
-  //     title: 'Just magic',
-  //   }
-  // ]
+  const {data: posts} = await sanityFetch({query: STARTUP_QUERY, params})
+  
   return (
     <>
       <section className="pink_container">
@@ -41,13 +30,15 @@ export default async function Home({searchParams}: {searchParams: Promise<{query
             posts.map((post: StartupCardType)=>(
               <StartupCard 
                 key={post?._id} 
-                post={post}/>
+                post={post}
+              />
             ))
           ):(
             <p className="no-results">NO Startups Found</p>
           )}
         </ul>
       </section>
+      <SanityLive/>
     </>
   );
 }
