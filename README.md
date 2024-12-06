@@ -1,4 +1,4 @@
-#A snippet into the final look of the site
+# A snippet into the final look of the site
 ![image](https://github.com/user-attachments/assets/58b5f346-82e5-40eb-a587-d10715e2ae6d)
 ![image](https://github.com/user-attachments/assets/e0f33d9c-a9ac-4413-ac34-607f582bd853)
 ![image](https://github.com/user-attachments/assets/42f4551d-0c99-4ce3-bd2d-da5532477a6d)
