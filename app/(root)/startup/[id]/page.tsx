@@ -76,9 +76,9 @@ async function page({params}: {params: Promise<{id: string}>}) {
 
       {/* Editor Selected Startups */}
 
-      <Suspense fallback={<Skeleton className='view-skeleton'/>}>
+      {/* <Suspense fallback={<Skeleton className='view-skeleton'/>}>
         <View id={id}/>
-      </Suspense>
+      </Suspense> */}
     </section>
     </>
   )
