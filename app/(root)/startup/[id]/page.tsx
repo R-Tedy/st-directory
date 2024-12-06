@@ -5,12 +5,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 // import { Link } from 'lucide-react'
 import { notFound } from 'next/navigation'
-import React, { Suspense } from 'react'
+// import React, { Suspense } from 'react'
 import markdownit from 'markdown-it'
-import { Skeleton } from '@/components/ui/skeleton'
-import View from '@/components/View'
+// import { Skeleton } from '@/components/ui/skeleton'
+// import View from '@/components/View'
 
-export const experimental_ppr = false
+// export const experimental_ppr = false
 
 const md = markdownit()
 
