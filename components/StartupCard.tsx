@@ -34,7 +34,7 @@ function StartupCard({post}:{post: StartupCardType}) {
           </Link>
         </div>
         <Link href={`/user/${author?._id}`}>
-          <Image src='https://placehold.co/400x400' alt='profile' width={48} height={48} className='rounded-full'/>
+          <Image src={author?.image} alt='profile' width={48} height={48} className='rounded-full'/>
         </Link>
       </div>
       <Link href={`/startup/${_id}`}>

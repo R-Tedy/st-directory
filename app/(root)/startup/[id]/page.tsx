@@ -23,7 +23,7 @@ async function page({params}: {params: Promise<{id: string}>}) {
 
   if (!post) return notFound()
   
-  const parsedContent= md.render(post?.pitch || '')
+  const parsedContent = md.render(post?.pitch || '')
 
   return (
     <>
@@ -59,7 +59,7 @@ async function page({params}: {params: Promise<{id: string}>}) {
             />
             <div >
               <p className='text-20-medium'>{post.author?.name}</p>
-              <p className='text-16-medium !text-black-300'>@{post.author.username}</p>
+              <p className='text-16-medium !text-black-300'>@{post.author?.username}</p>
             </div>
           </Link>
           <p className='category-tag'>{post.category}</p>
