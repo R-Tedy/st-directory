@@ -14,7 +14,9 @@
   "packageManager": "npm@10.9.1",
   "overrides": {
     "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106"
+    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "@types/react": "19.0.1",
+    "@types/react-dom": "19.0.1"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.1",
@@ -29,11 +31,11 @@
     "easymde": "^2.18.0",
     "lucide-react": "^0.462.0",
     "markdown-it": "^14.1.0",
-    "next": "^15.0.4-canary.45",
+    "next": "15.0.4",
     "next-auth": "^5.0.0-beta.25",
     "next-sanity": "^9.8.3-canary.1",
-    "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
     "react-simplemde-editor": "^5.2.0",
     "sanity": "^3.65.1",
     "sanity-plugin-markdown": "^5.0.0",
@@ -46,10 +48,10 @@
   "devDependencies": {
     "@types/markdown-it": "^14.1.2",
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "19.0.1",
+    "@types/react-dom": "19.0.1",
     "eslint": "^8",
-    "eslint-config-next": "15.0.3",
+    "eslint-config-next": "15.0.4",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
