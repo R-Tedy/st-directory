@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  productionBrowserSourceMaps: false,
+  // productionBrowserSourceMaps: false,
   typescript:{
     ignoreBuildErrors: true,
   },
@@ -17,11 +17,11 @@ const nextConfig: NextConfig = {
       }
     ]
   },
-  experimental: {
-    ppr: 'incremental',
-    after: true,
-    serverSourceMaps: false,
-  },
+  // experimental: {
+  //   ppr: 'incremental',
+  //   after: true,
+  //   serverSourceMaps: false,
+  // },
   devIndicators:{
     appIsrStatus: true,
     buildActivity: true,
