@@ -11,7 +11,7 @@
     "prebuild": "npm run typegen",
     "typegen": "sanity schema extract --path=./schema.json && sanity typegen generate"
   },
-  "packageManager": "npm@10.9.1",
+  "packageManager": "npm@10.9.2",
   
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.1",
