@@ -29,7 +29,7 @@
     "easymde": "^2.18.0",
     "lucide-react": "^0.462.0",
     "markdown-it": "^14.1.0",
-    "next": "^15.0.4-canary.39",
+    "next": "^15.0.4-canary.45",
     "next-auth": "^5.0.0-beta.25",
     "next-sanity": "^9.8.3-canary.1",
     "react": "19.0.0-rc-66855b96-20241106",
